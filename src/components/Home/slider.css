@@ -1,0 +1,23 @@
+.carosel-item1 {
+	height: 400px;
+	background-color: violet;
+}
+
+.carosel-item1 .image {
+	/* width: 50%; */
+}
+.carosel-text {
+	color: #fff;
+	text-align: center;
+}
+
+.carosel-text h3 {
+	font-size: 20px;
+	font-weight: normal;
+	color: rgb(42, 38, 250);
+}
+.carosel-text p {
+	font-size: 30px;
+	color: blue;
+	font-weight: bold;
+}

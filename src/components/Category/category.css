@@ -1,0 +1,10 @@
+.category-card div {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+}
+
+.category-card img {
+	max-width: 110px;
+	max-height: 100px;
+}
