@@ -3,9 +3,6 @@
 	background-color: violet;
 }
 
-.carosel-item1 .image {
-	/* width: 50%; */
-}
 .carosel-text {
 	color: #fff;
 	text-align: center;
@@ -20,4 +17,30 @@
 	font-size: 30px;
 	color: blue;
 	font-weight: bold;
+}
+
+@media (max-width: 992px) {
+	.carosel-text p {
+		font-size: 25px;
+	}
+
+	.carosel-text h3 {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	.carosel-text p {
+		font-size: 20px;
+	}
+
+	.carosel-text h3 {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.carosel-text {
+		width: 100% !important;
+	}
 }

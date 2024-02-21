@@ -4,6 +4,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 
 function NavScrollExample() {
 	return (
@@ -21,11 +22,14 @@ function NavScrollExample() {
 
 							<i className='fa-solid fa-cart-shopping'></i>
 						</Nav.Link>
-						<Nav.Link href='/' className='d-flex align-items-center gap-1'>
+						<Link
+							to='/login'
+							className='d-flex align-items-center gap-1 text-decoration-none text-dark d-block me-2'
+						>
 							<span>دخول</span>
 
 							<i className='fa-regular fa-user'></i>
-						</Nav.Link>
+						</Link>
 					</Nav>
 					<Form className='d-flex w-100'>
 						<Form.Control
@@ -36,9 +40,9 @@ function NavScrollExample() {
 						/>
 					</Form>
 				</Navbar.Collapse>
-				<Navbar.Brand href='/'>
+				<Link to='/'>
 					<img src={logo} alt='logo' width='70px' height='60px' />
-				</Navbar.Brand>
+				</Link>
 			</Container>
 		</Navbar>
 	);

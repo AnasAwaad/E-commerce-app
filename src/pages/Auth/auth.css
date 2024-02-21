@@ -1,0 +1,19 @@
+body {
+	background-color: #eee;
+}
+
+form input {
+	width: 270px;
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	outline: 0;
+	border-radius: 5px;
+}
+
+input:focus {
+	border: 2px solid rgb(92, 92, 233);
+}
+
+form .submit-btn {
+	width: 270px;
+}

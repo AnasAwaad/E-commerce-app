@@ -11,8 +11,8 @@ import pic from "../../images/pic.png";
 const CategoryContainer = () => {
 	return (
 		<>
-			<SubTitle title='التصنيفات' btnTitle='المزيد' />
-			<div className=' row  container  mx-auto my-2 d-flex justify-content-around '>
+			<SubTitle title='التصنيفات' btnTitle='المزيد' url={"/category"} />
+			<div className=' row  container  mx-auto my-2 d-flex justify-content-around  '>
 				<CategoryCard
 					title='اجهزة منزلية'
 					imgUrl={clothe}

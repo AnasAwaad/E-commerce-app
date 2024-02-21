@@ -1,0 +1,17 @@
+.dropdown-item {
+	text-align: right !important;
+}
+
+@media (max-width: 576px) {
+	.filter-sideBar-container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 380px) {
+	.filter-sideBar-container {
+		display: flex;
+		flex-direction: column;
+	}
+}

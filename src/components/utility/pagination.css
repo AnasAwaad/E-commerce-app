@@ -1,0 +1,14 @@
+.active > .page-link {
+	border-radius: 10px !important;
+	border: 1px solid #fff !important;
+}
+
+.page-link {
+	border-radius: 10px !important;
+	outline: 0px !important;
+	margin: 0 2px;
+}
+
+.page-item {
+	border: 0 !important;
+}

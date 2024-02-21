@@ -75,3 +75,7 @@
 	font-weight: 900;
 	font-style: italic;
 }
+
+.page {
+	min-height: calc(100vh - 135px);
+}

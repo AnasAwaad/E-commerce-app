@@ -17,47 +17,46 @@ function Slider() {
 	return (
 		<Carousel dir='ltr' activeIndex={index} onSelect={handleSelect}>
 			<Carousel.Item className='carosel-item1'>
-				<Container className='m-auto d-flex justify-content-center align-items-center w-50 flex-column flex-md-row'>
-					<div className=' carosel-text '>
+				<Container className='m-auto d-flex justify-content-center align-items-center w-50 h-100 flex-column-reverse flex-lg-row gap-2'>
+					<div className=' carosel-text col-sm-4 col-md-6 '>
 						<h3>هناك خصم كبير</h3>
 						<p>خصم يصل 50% عند شرائك</p>
 					</div>
-					<div className='image w-50 '>
-						<img src={sliderimg} alt='image1' height='400px' width='100%' />
-					</div>
-				</Container>
-			</Carousel.Item>
-
-			<Carousel.Item className='carosel-item1'>
-				<Container className='m-auto d-flex justify-content-center align-items-center w-50 flex-column flex-md-row'>
-					<div className=' carosel-text '>
-						<h3>هناك خصم كبير</h3>
-						<p>خصم يصل 50% عند شرائك</p>
-					</div>
-					<div className='image w-50 '>
-						<img src={prod3} alt='image1' height='400px' width='100%' />
+					<div className='image-container  col-sm-8 col-md-6'>
+						<img src={sliderimg} alt='image1' height='100%' width='100%' />
 					</div>
 				</Container>
 			</Carousel.Item>
 			<Carousel.Item className='carosel-item1'>
-				<Container className='m-auto d-flex justify-content-center align-items-center w-50 flex-column flex-md-row'>
-					<div className=' carosel-text '>
+				<Container className='m-auto d-flex justify-content-center align-items-center w-50 h-100 flex-column-reverse flex-lg-row gap-2'>
+					<div className=' carosel-text col-sm-4 col-md-6 '>
 						<h3>هناك خصم كبير</h3>
 						<p>خصم يصل 50% عند شرائك</p>
 					</div>
-					<div className='image w-50 '>
-						<img src={slider4} alt='image1' height='400px' width='100%' />
+					<div className='image-container  col-sm-8 col-md-6'>
+						<img src={slider4} alt='image1' height='100%' width='100%' />
 					</div>
 				</Container>
 			</Carousel.Item>
 			<Carousel.Item className='carosel-item1'>
-				<Container className='m-auto d-flex justify-content-center align-items-center w-50 flex-column flex-md-row'>
-					<div className=' carosel-text '>
+				<Container className='m-auto d-flex justify-content-center align-items-center w-50 h-100 flex-column-reverse flex-lg-row gap-2'>
+					<div className=' carosel-text col-sm-4 col-md-6 '>
 						<h3>هناك خصم كبير</h3>
 						<p>خصم يصل 50% عند شرائك</p>
 					</div>
-					<div className='image  '>
-						<img src={prod4} alt='image1' height='400px' width='100%' />
+					<div className='image-container  col-sm-8 col-md-6'>
+						<img src={prod3} alt='image1' height='100%' width='100%' />
+					</div>
+				</Container>
+			</Carousel.Item>
+			<Carousel.Item className='carosel-item1'>
+				<Container className='m-auto d-flex justify-content-center align-items-center w-50 h-100 flex-column-reverse flex-lg-row gap-2'>
+					<div className=' carosel-text col-sm-4 col-md-6 '>
+						<h3>هناك خصم كبير</h3>
+						<p>خصم يصل 50% عند شرائك</p>
+					</div>
+					<div className='image-container  col-sm-8 col-md-6'>
+						<img src={prod4} alt='image1' height='100%' width='100%' />
 					</div>
 				</Container>
 			</Carousel.Item>
