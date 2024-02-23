@@ -7,8 +7,11 @@ import cat2 from "../../images/cat2.png";
 import labtop from "../../images/labtop.png";
 import sale from "../../images/sale.png";
 import pic from "../../images/pic.png";
+import { useSelector } from "react-redux";
 
 const CategoryContainer = () => {
+	const state = useSelector((state) => state.category);
+	console.log(state);
 	return (
 		<>
 			<SubTitle title='التصنيفات' btnTitle='المزيد' url={"/category"} />
