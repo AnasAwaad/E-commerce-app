@@ -1,0 +1,19 @@
+.numOfrates {
+	color: #707070;
+	font-size: 17px;
+}
+.rateNumber {
+	color: #ffc107;
+}
+
+.input-form-area {
+	width: 100%;
+	color: #707070;
+	font-weight: bold;
+	border: 2px solid #bbbaba;
+	outline: 0;
+	background: #eeeeee;
+}
+.rate-name {
+	color: #504f4f;
+}

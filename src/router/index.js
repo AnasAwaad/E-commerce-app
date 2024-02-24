@@ -11,6 +11,7 @@ import BrandsPage from "../pages/Brand/BrandsPage";
 import RegisterPage from "../pages/Auth/RegisterPage";
 import LoginPage from "../pages/Auth/LoginPage";
 import "bootstrap/dist/css/bootstrap.css";
+import ProductDetailsPage from "../pages/Products/ProductDetailsPage";
 
 export const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -21,6 +22,7 @@ export const router = createBrowserRouter(
 			<Route path='brand' element={<BrandsPage />} />
 			<Route path='register' element={<RegisterPage />} />
 			<Route path='login' element={<LoginPage />} />
+			<Route path='product/:id' element={<ProductDetailsPage />} />
 		</Route>
 	)
 );

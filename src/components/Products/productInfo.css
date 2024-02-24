@@ -1,0 +1,16 @@
+.product-color {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: blue;
+}
+.product-color:first-child {
+	background-color: red;
+}
+.product-color:last-child {
+	background-color: yellow;
+}
+.product-desc {
+	font-size: 18px;
+	min-height: 250px;
+}

@@ -1,11 +1,14 @@
 import Card from "react-bootstrap/Card";
 import rate from "../../images/rate.png";
 import fav from "../../images/fav-off.png";
+import { Link } from "react-router-dom";
 function ProductCard({ description, image }) {
 	return (
 		<Card className='p-3  col-12 col-sm-6 shadow-sm rounded  col-md-4 col-lg-3 border-0  my-4 bg-light '>
 			<div>
-				<Card.Img variant='top' src={image} />
+				<Link to={"/product/id"}>
+					<Card.Img variant='top' src={image} />
+				</Link>
 				<img
 					src={fav}
 					alt='fav'

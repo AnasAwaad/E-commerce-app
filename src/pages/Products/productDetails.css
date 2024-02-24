@@ -1,0 +1,7 @@
+.comment-item {
+	border-top: 2px solid #d6d5d5;
+}
+
+.comment-item:last-child {
+	border-bottom: 2px solid #d6d5d5;
+}
