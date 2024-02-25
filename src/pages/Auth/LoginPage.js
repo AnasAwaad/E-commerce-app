@@ -6,7 +6,7 @@ const LoginPage = () => {
 	return (
 		<div className='page'>
 			<Container>
-				<form className='text-center'>
+				<form className='text-center auth'>
 					<h2 className='py-5'>تسجيل الدخول</h2>
 					<div className='mb-3'>
 						<input type='email' placeholder='الايميل' className='' />
@@ -31,6 +31,15 @@ const LoginPage = () => {
 						</Link>
 					</div>
 				</form>
+
+				<div className='my-4'>
+					<Link
+						to={"/admin"}
+						className='text-decoration-none text-danger fw-bold '
+					>
+						دخول ادمن
+					</Link>
+				</div>
 			</Container>
 		</div>
 	);

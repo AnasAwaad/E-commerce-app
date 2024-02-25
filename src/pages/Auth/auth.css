@@ -1,8 +1,8 @@
-body {
+.auth body {
 	background-color: #eee;
 }
 
-form input {
+.auth form input {
 	width: 270px;
 	padding: 5px 10px;
 	border: 1px solid #eee;
@@ -10,10 +10,10 @@ form input {
 	border-radius: 5px;
 }
 
-input:focus {
+.auth input:focus {
 	border: 2px solid rgb(92, 92, 233);
 }
 
-form .submit-btn {
+.auth form .submit-btn {
 	width: 270px;
 }

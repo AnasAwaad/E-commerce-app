@@ -1,6 +1,5 @@
 import React from "react";
 import "./category.css";
-import { Col } from "react-bootstrap";
 const CategoryCard = ({ imgUrl, cardColor, title }) => {
 	return (
 		<div

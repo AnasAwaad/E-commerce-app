@@ -1,14 +1,13 @@
-import { baseURL } from "../../Api/baseUrl";
 import useGetData from "../../hook/useGetData";
-import { GET_ALL_CATEGORY } from "../types";
+import { useInsertCategory } from "../../hook/useInsertData";
+import { ADD_NEW_CATEGORY, GET_ALL_CATEGORY } from "../types";
 
-export const getAllCategory = (limit, page) => {
+export const getAllCategory = (limit, page = 1) => {
 	return async (dispatch) => {
 		try {
 			const data = await useGetData(
 				`/api/v1/categories?limit=${limit}&page=${page}`
 			);
-			console.log(data);
 			dispatch({
 				type: GET_ALL_CATEGORY,
 				payload: data,
@@ -16,5 +15,26 @@ export const getAllCategory = (limit, page) => {
 		} catch (error) {
 			console.log(error);
 		}
+	};
+};
+
+export const addNewCategory = (data) => {
+	return async (dispatch) => {
+		try {
+			const newCategory = await useInsertCategory("/api/v1/categories", data);
+
+			dispatch({
+				type: ADD_NEW_CATEGORY,
+				payload: newCategory,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	};
+};
+
+export const isLoadingCategory = () => {
+	return {
+		type: "LOADING",
 	};
 };

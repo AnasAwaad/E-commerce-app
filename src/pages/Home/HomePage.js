@@ -5,23 +5,27 @@ import ProductContainer from "../../components/Products/ProductContainer";
 import BrandsContiner from "../../components/Brands/BrandsContiner";
 import DiscountSection from "../../components/Home/DiscountSection";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllCategory } from "../../redux/actions/categoryAction";
+import {
+	getAllCategory,
+	isLoadingCategory,
+} from "../../redux/actions/categoryAction";
 
 const HomePage = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getAllCategory());
+		dispatch(isLoadingCategory());
+		dispatch(getAllCategory(6, 1));
 	}, []);
-	const { category, loading } = useSelector((state) => state.category);
+	const { category, isLoading } = useSelector((state) => state.category);
 
 	return (
 		<div className='bg-light'>
 			<Slider />
 
 			<CategoryContainer
-				categoryList={!loading ? category.data.slice(0, 6) : null}
-				loading={loading}
+				categoryList={!isLoading ? category.data : null}
+				loading={isLoading}
 			/>
 			<ProductContainer
 				title='الاكثر مبيعا'
